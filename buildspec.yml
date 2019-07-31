@@ -11,6 +11,6 @@ phases:
       commands:
       - echo "Entered Post build"
       - mv target/deploy ./
-  artifacts:
+artifacts:
     files:
       - deploy/**/*
