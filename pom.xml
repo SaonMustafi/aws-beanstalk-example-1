@@ -48,7 +48,7 @@
 				    <artifactId>maven-war-plugin</artifactId>
 				    <executions>
 				        <execution>
-				            <phase>prepare-package</phase>
+				            <phase>package</phase>
 				            <configuration>
 				                <webappDirectory>target/deploy</webappDirectory>
 				                <archiveClasses>true</archiveClasses>
