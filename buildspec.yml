@@ -6,10 +6,11 @@ phases:
     build:
       commands:
       - echo "Entered Build phase"
-      - mvn install
+      - mvn clean prepare-package war:exploded
   post_build:
       commands:
       - echo "Entered Post build"
+      - mv target/deploy ./
 artifacts:
     files:
-      - target/aws-elastic-beanstalk-example-1-0.0.1-SNAPSHOT.war
+      - deploy/**/*
