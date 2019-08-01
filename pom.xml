@@ -48,11 +48,12 @@
 				    <artifactId>maven-war-plugin</artifactId>
 				    <executions>
 				        <execution>
-				            <phase>package</phase>
+				            <id>war-exploded</id>
 				            <configuration>
 				                <webappDirectory>target/deploy</webappDirectory>
 				                <archiveClasses>true</archiveClasses>
 				            </configuration>
+				            <phase>prepare-package</phase>
 				            <goals>
 				                <goal>exploded</goal>
 				            </goals>
