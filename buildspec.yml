@@ -12,4 +12,4 @@ phases:
       - echo "Entered Post build"
 artifacts:
     files:
-      - target/aws-elastic-beanstalk-example-1.war
+      - ./aws-elastic-beanstalk-example-1.war
