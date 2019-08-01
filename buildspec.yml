@@ -3,7 +3,7 @@ phases:
   pre_build:
     commands:
     - echo "Entered the pre-build phase"
-    build:
+  build:
       commands:
       - echo "Entered Build phase"
       - mvn clean prepare-package war:exploded
@@ -12,7 +12,6 @@ phases:
       - echo "Entered Post build"
       - echo "$(pwd)"
       - echo "$(ls)"
-      - mv target/deploy ./
 artifacts:
     files:
-      - deploy/**/*
+      - target/**/*
